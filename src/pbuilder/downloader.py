@@ -77,7 +77,7 @@ def write_err_output(error_pkgs: Dict[str, str], dest_path: Path) -> bool:
         with error_log_path.open("w", encoding="utf-8", newline='\n') as f:
             for pkg, error_msgs in error_pkgs.items():
                 f.write(f"{pkg}: {error_msgs}\n")
-        logger.error(f"Error log updated at {error_log_path.as_posix()} (Total: {len(error_pkgs)} packages)")
+        logger.info(f"Error log updated at {error_log_path.as_posix()} (Total: {len(error_pkgs)} packages)")
         return True
     except IOError as e:
         logger.error(f"Error writing to {error_log_path}: {e}")
