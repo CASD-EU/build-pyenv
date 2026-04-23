@@ -31,10 +31,17 @@ For example if you target environment is a `Windows Server 2019` with `x86` CPU 
 should also be `Windows, x86, and python 3.11`.
 
 > We recommend you to use a virtual environment to run the tool.
+> Your local environment must have internet access.
+
+For example, you can create a virtual environment for python 3.11 with conda.
+
+```powershell
+conda create --name my_test python=3.11
+```
 
 ### Installation
 
-Here we suppose you already have the required `python` and `pip`.
+Here we suppose you already have the required `python`, `pip` and `virtual environment`.
 
 ```powershell
 pip install build-pyenv
