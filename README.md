@@ -1,6 +1,6 @@
-# build_pyenv
+# build-pyenv
 
-This CLI tool is a high-performance CLI tool designed to prepare `Python environments for air-gapped or 
+The `build-pyenv` tool is a high-performance CLI tool designed to prepare `Python environments for air-gapped or 
 restricted-network servers`. It automates the process of downloading, building (if necessary), and caching 
 Python packages files(.whl) and their dependencies.
 
